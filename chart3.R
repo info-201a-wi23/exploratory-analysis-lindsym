@@ -5,7 +5,7 @@ library("readxl")
 library("dplyr")
 
 #getting data for population in each country in 2020
-world_health_df <- read_excel("explorator-analysis-lindsym/world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
+world_health_df <- read_excel("world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
 member_states <- world_health_df$`Member State...1`
 male_population <- world_health_df$`2020...2`
 female_population <- world_health_df$`...3`
