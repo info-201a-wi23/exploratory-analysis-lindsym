@@ -81,12 +81,15 @@ We want to see if there any huge mismatches between average life expectancy and 
 
 ``````{r, echo = FALSE, code = readLines("chart2.R"), warning = FALSE, message = FALSE}
 ```
+
 #### **Purpose**
-We wanted to explore gender
+Through exploring the range in ratio differences among gender, we hoped to recognize where the majority of countries would fall under. Through noticing where points are more tightly centered together, we notice the outliers that stray from the rest of the data in terms of comparing percentage in populations. Most importantly, the x and y axis allow us to compare between genders, as the sum of female and male percentages add up to 100%.
 
-Include a chart
+#### **Insights**
+- Most countries were centered around the point (0.5, 0.5) than any other area on the scatter plot. Which means these country's population had gender ratios of 50% male and 50% female.
+- There's a handful of countries in which the female percentage is above 50%, therefore there is a higher ratio of female to males in these countries.
+- However, there are scarcely a few countries in which the percentage of males is greater than the perentage proportion of female. These are prominent outliers within the data.
 
-Describe why you chose this chart and what information it reveals
 
 <<<<<<< HEAD
 
