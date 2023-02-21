@@ -12,7 +12,7 @@ population_year <- rep(2020, length(member_states))
 
 #getting data for life expetancy in each country in 2019
 male_life_expectancy <- world_health_df$`2019...5`
-male_life_expectancy <- world_health_df$`...6`
+female_life_expectancy <- world_health_df$`...6`
 both_sexes_life_expectancy <- world_health_df$`...7`
 life_expectancy_year <- rep(2019, length(member_states))
 

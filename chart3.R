@@ -3,6 +3,8 @@ install.packages("tidyverse")
 library("ggplot2")
 library("readxl")
 library("dplyr")
+library("readxl")
+
 
 #getting data for population in each country in 2020
 world_health_df <- read_excel("world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
