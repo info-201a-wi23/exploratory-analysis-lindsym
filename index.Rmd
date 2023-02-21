@@ -77,16 +77,19 @@ We want to see if there any huge mismatches between average life expectancy and 
 - There is not a huge mismatch between average healthy life expectancy and average life expectancy, makes us wonder how they are measuring healthy life.
 - there does not seem to be any big correlation being continents with less developed countries and having a lower average healthy or life expectancy. 
 
-### Chart 2
+### **Chart 2**
+
+``````{r, echo = FALSE, code = readLines("chart2.R"), warning = FALSE, message = FALSE}
+```
+#### **Purpose**
+We wanted to explore gender
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
 
 <<<<<<< HEAD
-### Chart 3
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
+
 =======
 ### **Chart 3**
 >>>>>>> origin/main
