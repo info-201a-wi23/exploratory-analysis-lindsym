@@ -6,7 +6,8 @@ library("dplyr")
 
 
 #getting data for population in each country in 2020
-world_health_df <- read_excel("world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
+world_health_df <- read_excel("xploratory-analysis-lindsym
+world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
 
 member_states <- world_health_df$`Member State...1`
 male_population <- as.numeric(world_health_df$`2020...2`)
@@ -35,6 +36,11 @@ df <- data.frame(member_states, male_population, female_population, total_popula
 
 
 world <- map_data("world")
+
+
+df <- df %>%
+  mutate(male_per = male_population / total_population) %>%
+  mutate(female_per = female_population / total_population) 
 
 ggplot(df) +
   geom_point(mapping = aes(x = male_per, y = female_per)) +
