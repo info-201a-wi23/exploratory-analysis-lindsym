@@ -3,14 +3,15 @@ install.packages("tidyverse")
 library("ggplot2")
 library("readxl")
 library("dplyr")
-library("readxl")
+
 
 #getting data for population in each country in 2020
 world_health_df <- read_excel("world_health_stats.xlsx", sheet = "Annex 2-1", range = "A5:V199")
+
 member_states <- world_health_df$`Member State...1`
-male_population <- world_health_df$`2020...2`
-female_population <- world_health_df$`...3`
-total_population <- world_health_df$`...4`
+male_population <- as.numeric(world_health_df$`2020...2`)
+female_population <- as.numeric(world_health_df$`...3`)
+total_population <- as.numeric(world_health_df$`...4`)
 population_year <- rep(2020, length(member_states))
 
 #getting data for life expetancy in each country in 2019
