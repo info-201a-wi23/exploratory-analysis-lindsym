@@ -78,6 +78,8 @@ Include a chart
 Describe why you chose this chart and what information it reveals
 
 ### Chart 3
+``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```
 
 Include a chart
 
