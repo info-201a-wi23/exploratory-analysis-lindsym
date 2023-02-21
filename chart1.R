@@ -25,7 +25,7 @@ total_avg_life_expectancy <- left_join(total_avg_life_expectancy, total_avg_heal
 total_avg_life_expectancy <- gather(total_avg_life_expectancy, key = "type", value="avg", 2:3) %>% filter(!is.na(Continent))
 
 
-ggplot(total_avg_life_expectancy, aes(x = Continent, y = avg, fill = type)) + geom_bar(stat = "identity", position = "dodge") + labs(y = "Years", fill = "Average type") + scale_fill_discrete(labels = c("Average Healthy Life Expetancy", "Average life expetancy"))
+ggplot(total_avg_life_expectancy, aes(x = Continent, y = avg, fill = type)) + geom_bar(stat = "identity", position = "dodge") + labs(y = "Years", fill = "Average type", title = "Average Life vs. Average Healthy life expectancy on each continent") + scale_fill_discrete(labels = c("Average Healthy Life Expetancy", "Average life expetancy"))
 
 
 library("tidyr")

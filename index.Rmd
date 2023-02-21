@@ -67,8 +67,11 @@ Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1.R")}
+``````{r, echo = FALSE, code = readLines("chart1.R"), warning = FALSE, message = FALSE}
 ```
+
+#### Purpose
+We want to see if 
 
 ### Chart 2
 
@@ -77,18 +80,14 @@ Include a chart
 Describe why you chose this chart and what information it reveals
 
 ### Chart 3
-<<<<<<< HEAD
 
 Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-``````{r, echo = FALSE, code = readLines("chart3.R")}
+``````{r, echo = FALSE, code = readLines("chart3.R"), warning = FALSE, message = FALSE}
 ```
-=======
-```
-{r, echo = FALSE, code = readLines("chart3.R")}
-```
+
 #### Purpose
 By associating color to numeric values on this choropleth map, it is easy to identify countries and even regions to their mortality rate. Lighter shades of blue indicate a higher rate while darker shades of blue indicate lower rates.
 
@@ -97,4 +96,3 @@ By associating color to numeric values on this choropleth map, it is easy to ide
    - This trend can be associated to poverty levels and inequities in health care. 
  - The lowest mortality rates are found in countries identified as "Western."
 
->>>>>>> 1bbe8e317a22a89ab66217261084fa54cb815c72
