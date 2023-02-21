@@ -1,3 +1,4 @@
+
 ---
 title: "Exploratory Analysis"
 output: html_document
@@ -91,19 +92,15 @@ Through exploring the range in ratio differences among gender, we hoped to recog
 - However, there are scarcely a few countries in which the percentage of males is greater than the perentage proportion of female. These are prominent outliers within the data.
 
 
-<<<<<<< HEAD
-
-=======
 ### **Chart 3**
->>>>>>> origin/main
 
 ``````{r, echo = FALSE, code = readLines("chart3.R"), warning = FALSE, message = FALSE}
 ```
 
-#### Purpose
+#### **Purpose**
 By associating color to numeric values on this choropleth map, it is easy to identify countries and even regions to their mortality rate. Lighter shades of blue indicate a higher rate while darker shades of blue indicate lower rates.
 
-#### Insights
+#### **Insights**
  - The highest mortality rates can be found around central Africa. 
    - This trend can be associated to poverty levels and inequities in health care. 
  - The lowest mortality rates are found in countries identified as "Western."
