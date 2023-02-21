@@ -3,41 +3,47 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## World Health Statistics 2022
+## **World Health Statistics 2022**
 
-### Authors
+### **Authors**
 
-Lindsy Marroquin, Judy Kuang, Santiago Garcia, Leban Mohamud
+- Lindsy Marroquin 
+- Judy Kuang
+- Santiago Garcia
+- Leban Mohamud
 
-### Date
+### **Date**
 
 Winter 2022
 
-### Abstract
+### **Abstract**
 
 By analyzing world health statistics, conclusions can be made about individual countries, regions, and their governments. These analyses are created by comparing data to other countries, different sexes, and similar data types.
 
-### Keywords
+### **Keywords**
 
 World health; life statistics; health data; health; WHO
 
-### Introduction  
+### **Introduction** 
 
 The World Health Organization provides yearly statistics on the various factors that demonstrate the health of a country. These statistics in turn demonstrate more information about a country’s economic status. With a healthier population, a country may have increased productivity and a larger labor size.  Our team decided to analyze this dataset with the intent of understanding more about a country. One of the key factors that demonstrate the health of a country is life expectancy. With that in mind, some of our driving questions were how do individual regions compare to each other, how do men and women statistics vary in different countries, and how do mortality rates differ? By creating visualizations for these guiding questions, we can go on to ask are there any outliers from a certain country in comparison to other countries and what are the typical trends seen across all the data? There are typically expected results that come with this type of data, such as women having longer life expectancies than men. We hope to find unexpected results or continue to prove known trends with the most recent data the WHO has provided for 2022.
 
-### Related Work  
+### **Related Work**  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Our topic on global public health relates to how amidst the Covid-19 pandemic, existing conditions within societies in terms of development, gender ratio, and placement in the demographic transition model vary between countries.
+In particular, the concept of demographic transition models can be used to categorize many of these countries. As noted in [Population Education](https://populationeducation.org/what-demographic-transition-model/), studies have stated that out of the 5 stages, “Most developed countries are in Stage 4.” This is due to demographic changes in life expectancy and population growth. In relation to our project, acknowledgment of population-oriented data is crucial to understanding health trends.
 
-### The Dataset
+Moreover, a major health component nonetheless that shouldn’t be overlooked within this topic is the gender ratio. Profound in [Our World in Data](https://ourworldindata.org/gender-ratio), the organizational article illustrates that the worldwide infant mortality rate for males is higher than for females. The article further elaborates on research concerning infectious disease and birth complications where: “The Y-chromosome in boys increases their vulnerability. Biologically … having two X chromosomes means that the newborn has a stronger immune system because X chromosomes contain a larger number of immune-related genes.” In other words, infant deaths for males are genetically more common across the board. This subject goes hand in hand with our data and background knowledge that females generally live longer than males.
+
+### **The Dataset**
 
 We are going to use a dataset of world health statistics that was created by the World Health Organization(WHO). All of the data in the dataset comes from databases and publications published and maintained by WHO, it has reports for 193 countries and 7 regions (200 rows). In the dataset, WHO splits its data into two subsets, primary data and comparable estimates. Primary data is mainly collected through routine reporting, and through publicly available Demographic and Health surveys. Comparable estimates are created by modeling primary country data, this allows for data to be compared to other years. The data was collected to be able to see how the Covid-19 pandemic affected the health systems world wide.
 
-### Implications
+### **Implications**
 
 Some of the implications that could arise if we answer our research questions is that health officials are going to have to be able to answer why life expectancy has decreased or increased in the current years. Health officials are also going to have to be able to explain how covid has impacted the population of each country and impacted each gender differently, additionally be able to explain what effect covid caused on healthy life expectancy in each country and which regions have been impacted the most. Lastly, with this dataset, we are hopefully able to find that covid a tremendous impact on slowing down health care all around the globe, with this governments are going to have to make improvements to it, to make sure that if another pandemic happens we are ready for it and doesn’t create such a huge slow down in treatments of other patients that were not covid related.
 
-### Limitations & Challenges
+### **Limitations & Challenges**
 
 There are several challenges and limitations that need to be addressed in this project idea. Data quality: The accuracy of the data collected by the WHO can be a challenge as it relies on data reported by the individual countries. It is important to check the quality of the data to ensure that the results of the analysis are reliable.
 
@@ -59,19 +65,17 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
-### Chart 1
-
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
+### **Chart 1**
 
 ``````{r, echo = FALSE, code = readLines("chart1.R"), warning = FALSE, message = FALSE}
 ```
 
-#### Purpose
-We want to see if 
+#### **Purpose**
+We want to see if there any huge mismatches between average life expectancy and average healthy life expectancy on each continent and what might be causing that, also checking if there is any correlation between continents having less developed countries and having a lower life expectancy. 
+
+#### **Insights** 
+- There is not a huge mismatch between average healthy life expectancy and average life expectancy, makes us wonder how they are measuring healthy life.
+- there does not seem to be any big correlation being continents with less developed countries and having a lower average healthy or life expectancy. 
 
 ### Chart 2
 
@@ -79,11 +83,7 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-### Chart 3
-
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+### **Chart 3**
 
 ``````{r, echo = FALSE, code = readLines("chart3.R"), warning = FALSE, message = FALSE}
 ```
@@ -96,3 +96,4 @@ By associating color to numeric values on this choropleth map, it is easy to ide
    - This trend can be associated to poverty levels and inequities in health care. 
  - The lowest mortality rates are found in countries identified as "Western."
 
+  

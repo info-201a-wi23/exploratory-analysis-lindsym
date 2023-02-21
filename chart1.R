@@ -1,5 +1,6 @@
 library("tidyverse")
 library("readxl")
+library("dplyr")
 
 
 countries_df <- read.csv("https://raw.githubusercontent.com/dbouquin/IS_608/master/NanosatDB_munging/Countries-Continents.csv", stringsAsFactors = F)
@@ -13,7 +14,7 @@ both_healthy_sexes_life_expectancy <- as.numeric(world_health_df$`...10`)
 
 life_expectancy_df <- data.frame(member_states, both_sexes_life_expectancy, both_healthy_sexes_life_expectancy)
 
-life_expectancy_df <- left_join(life_expectancy_df, countries_df, by=join_by(member_states == Country))
+life_expectancy_df <- left_join(life_expectancy_df, countries_df, by=c("member_states" = "Country"))
 
 total_avg_life_expectancy <- life_expectancy_df %>% filter(both_sexes_life_expectancy != "-") %>% group_by(Continent) %>% summarise(avg_life_expetancy = mean(both_sexes_life_expectancy))
 
